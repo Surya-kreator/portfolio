@@ -8,10 +8,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Mail, href: 'mailto:hello@yourportfolio.com', label: 'Email' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Mail, href: 'mailto:jayasurya007x@gmail.com', label: 'Email' },
+    { icon: Instagram, href: 'https://www.instagram.com/_surya.__.__?igsh=MXJwYW5kMHZndXdIdA==', label: 'Instagram' },
+    
   ];
 
   return (
