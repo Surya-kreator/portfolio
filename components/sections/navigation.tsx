@@ -11,18 +11,21 @@ export default function Navigation() {
   const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Work', href: '#showcase' },
+    { label: 'Projects', href: '#showcase' },
     { label: 'Pricing', href: '#pricing' },
+    { label: 'FAQs', href: '#faq' },          // ✅ Added
+    { label: 'Contact', href: '#contact' },   // ✅ Custom Project section
   ];
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
+          
+          {/* Logo (SEO improvement) */}
           <Link href="/" className="flex items-center group">
             <div className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-              Portfolio
+              Jayasurya.dev
             </div>
           </Link>
 
@@ -39,13 +42,13 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Desktop CTA Button */}
+          {/* CTA Button */}
           <div className="hidden md:block">
             <Button
               asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              <a href="#contact">Start Project</a>
+              <a href="#contact">Get Website</a>
             </Button>
           </div>
 
@@ -76,11 +79,12 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
+
             <Button
               asChild
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              <a href="#contact">Start Project</a>
+              <a href="#contact">Get Website</a>
             </Button>
           </div>
         )}
