@@ -7,34 +7,42 @@ export default function Services() {
   const services = [
     {
       icon: Globe,
-      title: 'Landing Page Design',
-      description: 'Create compelling landing pages that convert visitors into customers with modern design and strategic copywriting.',
+      title: 'Landing Page Development',
+      description:
+        'High-converting landing pages designed to turn visitors into customers. Optimized for speed, mobile devices, and lead generation.',
     },
     {
       icon: Zap,
       title: 'Business Website Development',
-      description: 'Build professional websites that establish your online presence and showcase your business with clean, responsive design.',
+      description:
+        'Professional business websites that help you attract customers, showcase services, and build a strong online presence.',
     },
     {
       icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Design intuitive and beautiful user interfaces focused on user experience and accessibility best practices.',
+      title: 'UI/UX Design for Websites',
+      description:
+        'Modern and user-friendly website designs focused on improving user experience, engagement, and conversions.',
     },
   ];
 
   return (
     <section id="services" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
-            Services
+            Web Development Services
           </span>
+
+          {/* H2 = SEO GOLD */}
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">
-            What I Offer
+            Website Development & Landing Page Services for Businesses
           </h2>
+
+          {/* AEO-optimized paragraph */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive web solutions tailored to your business needs.
+            I provide website development services that help businesses grow online. From high-converting landing pages to full business websites, each project is built to attract customers, improve user experience, and increase conversions.
           </p>
         </div>
 
@@ -50,9 +58,13 @@ export default function Services() {
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
+
+                {/* H3 = keyword support */}
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   {service.title}
                 </h3>
+
+                {/* AEO-friendly description */}
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
@@ -60,6 +72,7 @@ export default function Services() {
             );
           })}
         </div>
+
       </div>
     </section>
   );
