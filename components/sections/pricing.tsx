@@ -8,32 +8,32 @@ export default function Pricing() {
   const plans = [
     {
       name: 'Professional Plan',
-      description: 'Perfect for small businesses starting their online presence',
-      price: 'Custom',
+      description: 'Best for small businesses that need a modern website to get started online',
+      price: '₹999',
       features: [
-        'Basic website design',
-        'Fully responsive design',
-        'Mobile-optimized',
+        'Business website design',
+        'Fully responsive (mobile-friendly)',
+        'Fast loading website',
         'SEO-friendly structure',
         'Contact form integration',
         '2 rounds of revisions',
-        ' 3 months of support',
+        '3 months support',
       ],
       recommended: false,
     },
     {
       name: 'Growth Plan',
-      description: 'Ideal for growing businesses with advanced needs',
-      price: 'Custom',
+      description: 'Perfect for growing businesses that want more features and better performance',
+      price: '₹2499',
       features: [
         'Advanced website design',
-        'E-commerce integration',
+        'Landing page optimization',
         'High performance optimization',
-        'Analytics implementation',
+        'Analytics setup',
         'CMS integration',
         'Unlimited revisions',
-        '6 months of support',
-        'Monthly optimization reports',
+        '6 months support',
+        'Monthly optimization suggestions',
       ],
       recommended: true,
     },
@@ -42,16 +42,21 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-20 md:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
-            Pricing
+            Website Pricing Plans
           </span>
+
+          {/* SEO-optimized H2 */}
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">
-            Simple, Transparent Pricing
+            Affordable Website Development Pricing for Businesses
           </h2>
+
+          {/* AEO-friendly description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your business needs. All plans include professional support.
+            Choose a website development plan that fits your business needs. These pricing options are designed to help businesses launch fast, attract customers, and grow online with modern, high-performing websites.
           </p>
         </div>
 
@@ -69,7 +74,7 @@ export default function Pricing() {
               {/* Recommended Badge */}
               {plan.recommended && (
                 <div className="absolute -top-4 right-8 inline-block px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-wider">
-                  Recommended
+                  Most Popular
                 </div>
               )}
 
@@ -81,11 +86,13 @@ export default function Pricing() {
                 <p className="text-muted-foreground text-sm mb-4">
                   {plan.description}
                 </p>
-                <div className="flex items-baseline gap-1">
+                <div className="flex items-baseline gap-2">
                   <span className="text-4xl font-bold text-foreground">
                     {plan.price}
                   </span>
-                  <span className="text-muted-foreground">inquire</span>
+                  <span className="text-muted-foreground text-sm">
+                    starting price
+                  </span>
                 </div>
               </div>
 
@@ -108,24 +115,28 @@ export default function Pricing() {
                     : 'border border-border hover:bg-muted'
                 }`}
               >
-                <a href="#contact">Choose Plan</a>
+                <a href="#contact">Get Started</a>
               </Button>
             </Card>
           ))}
         </div>
 
-        {/* Additional Info */}
-        <div className="text-center">
-          <p className="text-muted-foreground mb-4">
-            Need a custom solution? Let&apos;s discuss your specific requirements.
+        {/* AEO Boost Section */}
+        <div className="text-center max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4">
+            How much does a website cost?
+          </h3>
+          <p className="text-muted-foreground mb-6">
+            Website pricing depends on features, design complexity, and business needs. Basic business websites start from ₹999, while advanced websites with optimization and integrations start from ₹2499.
           </p>
+
           <Button
             asChild
             variant="outline"
             size="lg"
             className="border-border hover:bg-muted"
           >
-            <a href="#contact">Get Custom Quote</a>
+            <a href="#contact">Request Custom Website</a>
           </Button>
         </div>
       </div>
