@@ -75,7 +75,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Dark Overlay (IMPORTANT for readability) */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
@@ -85,21 +85,21 @@ export default function Hero() {
           {/* Overline */}
           <div className="inline-block">
             <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider">
-              Freelance Web Developer
+              Website Developer for Businesses
             </span>
           </div>
 
-          {/* Heading */}
+          {/* Heading (H1 = KEY SEO AREA) */}
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            I build websites for{' '}
+            High-Converting Websites & Landing Pages for{' '}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              businesses and landing pages
+              Growing Businesses
             </span>
           </h1>
 
-          {/* Description */}
+          {/* Description (AEO-focused) */}
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Help businesses create a strong online presence with modern, responsive, and conversion-focused web design. Let&apos;s build something great together.
+            I design and develop fast, responsive websites that help businesses attract customers, showcase services, and increase conversions. Perfect for startups, local businesses, and brands looking to grow online.
           </p>
 
           {/* Buttons */}
@@ -121,7 +121,7 @@ export default function Hero() {
               variant="outline"
               className="border-white/40 text-black hover:bg-white/10"
             >
-              <a href="#contact">Start a Project</a>
+              <a href="#contact">Get Your Website</a>
             </Button>
           </div>
 
