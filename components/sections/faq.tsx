@@ -10,50 +10,66 @@ import {
 export default function FAQ() {
   const faqs = [
     {
-      question: 'How long does a project take?',
+      question: 'How much does a website cost for a business?',
       answer:
-        'Project timelines vary depending on scope and complexity. A simple landing page typically takes 2-4 weeks, while more complex websites may take 6-12 weeks. I provide detailed timelines after understanding your requirements.',
+        'The cost of a business website depends on features and complexity. Basic websites start from ₹499, while advanced websites with more features and optimization start from ₹999.',
     },
     {
-      question: 'What do you need to get started?',
+      question: 'How long does it take to build a website?',
       answer:
-        'To kick off your project, I need your business information, target audience insights, reference websites you like, and your project goals. We&apos;ll have a discovery call to discuss everything in detail.',
+        'Most websites are completed within 3 to 7 days. More complex websites with custom features may take longer depending on requirements.',
     },
     {
-      question: 'Do you provide post-launch support?',
+      question: 'What does a website do for a business?',
       answer:
-        'Yes! All plans include ongoing support after launch. This includes bug fixes, maintenance, security updates, and technical assistance. Extended support packages are also available.',
+        'A website helps businesses attract customers, showcase services, build trust, and increase conversions by providing an online presence accessible anytime.',
     },
     {
-      question: 'Can I request custom features?',
+      question: 'Do you build landing pages that convert?',
       answer:
-        'Absolutely! I can integrate custom features based on your specific needs. This might include integrations with third-party tools, custom functionality, or advanced functionality tailored to your business.',
+        'Yes, I create high-converting landing pages designed to turn visitors into leads or customers using optimized design, structure, and user experience.',
     },
     {
-      question: 'What technologies do you use?',
+      question: 'Will my website be mobile-friendly?',
       answer:
-        'I specialize in modern web technologies including React, Next.js, TypeScript, Tailwind CSS, and various backend solutions. I choose the best tech stack based on your project requirements.',
+        'Yes, every website is fully responsive and optimized for mobile devices, ensuring a smooth experience across phones, tablets, and desktops.',
     },
     {
-      question: 'Do you offer hosting and domain services?',
+      question: 'Do you provide SEO-friendly websites?',
       answer:
-        'I can guide you on hosting providers and domain registration. While I focus on development, I work with reliable partners and can help with the entire setup process.',
+        'Yes, all websites are built with SEO best practices including fast loading speed, proper structure, and optimized content to help improve search visibility.',
+    },
+    {
+      question: 'Can I update my website after it is built?',
+      answer:
+        'Yes, you can easily update your website. I can also integrate a CMS if you want full control over content updates.',
+    },
+    {
+      question: 'Do you provide support after the website is launched?',
+      answer:
+        'Yes, all plans include post-launch support for maintenance, updates, and technical assistance to ensure your website runs smoothly.',
     },
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-secondary/30">
+    // <section className="py-20 md:py-32 bg-secondary/30">
+    <section id="faq" className="py-20 md:py-32 bg-secondary/30">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
-            FAQ
+            Website FAQs
           </span>
+
+          {/* SEO-optimized H2 */}
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">
-            Frequently Asked Questions
+            Frequently Asked Questions About Website Development
           </h2>
+
+          {/* AEO-friendly intro */}
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about my services and process.
+            Here are answers to common questions about website development, pricing, timelines, and how websites help businesses grow.
           </p>
         </div>
 
@@ -66,7 +82,7 @@ export default function FAQ() {
                   {faq.question}
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-4">
+              <AccordionContent className="text-muted-foreground pb-4 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
