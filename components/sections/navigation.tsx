@@ -12,7 +12,7 @@ export default function Navigation() {
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Projects', href: '#showcase' },
-    { label: 'Pricing', href: '#pricing' },
+    // { label: 'Pricing', href: '#pricing' },
     { label: 'FAQs', href: '#faq' },          // ✅ Added
     { label: 'Contact', href: '#contact' },   // ✅ Custom Project section
   ];
