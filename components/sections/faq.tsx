@@ -12,7 +12,7 @@ export default function FAQ() {
     {
       question: 'How much does a website cost for a business?',
       answer:
-        'The cost of a business website depends on features and complexity. Basic websites start from ₹499, while advanced websites with more features and optimization start from ₹999.',
+        'The cost of a business website depends on features and complexity.',
     },
     {
       question: 'How long does it take to build a website?',
